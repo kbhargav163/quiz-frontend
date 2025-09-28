@@ -1,3 +1,47 @@
+## Project: SRE Quiz Web App (Frontend)
+1. Folder Structure
+
+quiz-frontend/
+├─ package.json
+├─ tsconfig.json
+├─ tailwind.config.js
+├─ next.config.js
+├─ public/
+│   └─ sre-image.png          # Home page image
+├─ src/
+│   └─ app/
+│       ├─ components/
+│       │   ├─ QuizCard.tsx       # Renders individual question card
+│       │   ├─ ProgressBar.tsx    # Displays quiz progress
+│       │   └─ ScoreCard.tsx      # Displays final scorecard with animations
+│       ├─ globals.css            # Tailwind + custom styles
+│       ├─ page.tsx               # Home page with "Start Quiz" button
+│       ├─ quiz/
+│       │   └─ page.tsx           # Main quiz page + logic
+│       └─ results/
+│           └─ page.tsx           # Results page (user answers + correctness)
+
+
+
+2. Core Dependencies
+
+Next.js → App framework for frontend
+
+React → Component-based UI
+
+TypeScript → Static typing for safety
+
+Tailwind CSS → Styling and responsive design
+
+Framer Motion → Animations for cards and scorecard
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +78,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
