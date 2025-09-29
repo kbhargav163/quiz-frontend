@@ -1,8 +1,8 @@
-# quiz-frontend
-Project: SRE Quiz Web App (Frontend)
+
 ## Project: SRE Quiz Web App (Frontend)
 1. Folder Structure
 
+```bash
 quiz-frontend/
 ├─ package.json
 ├─ tsconfig.json
@@ -22,7 +22,7 @@ quiz-frontend/
 │       │   └─ page.tsx           # Main quiz page + logic
 │       └─ results/
 │           └─ page.tsx           # Results page (user answers + correctness)
-
+```
 
 
 2. Core Dependencies
