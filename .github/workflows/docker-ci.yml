@@ -2,7 +2,7 @@ name: Build and Push Frontend Docker Image
 
 on:
   push:
-    branches: [ "main" ]   # runs on push to main branch
+    branches: [ "main" ]   # - runs on push to main branch
 
 jobs:
   build:
