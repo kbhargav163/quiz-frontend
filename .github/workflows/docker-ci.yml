@@ -1,8 +1,8 @@
-name: Build and Push Frontend Docker Image
+name: Build, Push and Deploy Frontend
 
 on:
   push:
-    branches: [ "main" ]   
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -23,3 +23,12 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/quiz-frontend:latest
+
+      - name: Deploy on EC2
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            cd ~/ && docker compose pull && docker compose up -d
