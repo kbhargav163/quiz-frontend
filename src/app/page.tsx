@@ -18,7 +18,7 @@ export default function HomePage() {
           Test your SRE knowledge with 10 challenging questions.
         </p>
         <button
-          onClick={() => router.push("/quiz")}
+          onClick={() => router.push("/api/quiz")}
           className="px-6 py-3 bg-rose-500 rounded-lg hover:bg-blue-500 transition-all text-white font-semibold"
         >
           Start Quiz
