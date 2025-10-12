@@ -36,7 +36,7 @@ export default function QuizPage() {
     setFinished(false);
     setAnswers([]);
 
-    fetch(`${process.env.NEXT_PUBLIC_API_URL}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/quiz`)
     .then((res) => res.json())
     .then((data) => setQuestions(data))
     .catch((err) => {
