@@ -30,7 +30,7 @@ export default function QuizPage() {
   const router = useRouter();
 
   useEffect(() => {
-    setQuestions(null); // reset when component mounts
+    setQuestions(null); 
     setCurrentIndex(0);
     setScore(0);
     setFinished(false);
