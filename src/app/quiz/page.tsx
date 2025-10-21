@@ -85,7 +85,7 @@ export default function QuizPage() {
     router.push("/results");
   };
 
-  // **Loading state while fetching questions**
+  
   if (!questions) return <div className="text-center mt-10 text-xl">Loading quiz...</div>;
 
   if (finished) {
